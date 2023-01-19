@@ -146,14 +146,14 @@ public class Parser {
 			ParserCallback callBack=new ParserCallback(visitedURIs, foundURIs);
 			if (args.length==2) {
 				try {
-					callBack.maxDepth = Integer.parseInt(args[2]);
+					callBack.maxDepth = Integer.parseInt(args[1]);
 				} catch (NumberFormatException e) {
 					e.printStackTrace();
 				}
 			}
 			if (args.length==3) {
 				try {
-					callBack.debugLevel = Integer.parseInt(args[3]);
+					callBack.debugLevel = Integer.parseInt(args[2]);
 				} catch (NumberFormatException e) {
 					e.printStackTrace();
 				}
